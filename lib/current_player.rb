@@ -49,3 +49,12 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 turn(board)
+
+
+def turn_count (turn)
+  move_count []
+  turn.each do |column|
+    if column == "x" || column = "O"
+      move_count.push (1)
+    end
+    
